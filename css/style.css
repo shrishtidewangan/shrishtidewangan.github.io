@@ -62,6 +62,20 @@ body {
 [tabindex="-1"]:focus {
   outline: 0 !important; }
 
+/* Control hero section height */
+#home-section {
+  height: 80vh;          /* reduce height (try 70vh if still big) */
+  min-height: 500px;     /* prevents it from becoming too small */
+}
+
+/* Control background image size */
+#home-section .img {
+  background-size: contain;   /* prevents zoomed-in image */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
